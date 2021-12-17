@@ -1,0 +1,4 @@
+#amplify-do-not-edit-begin
+.secret-*
+**.sample
+#amplify-do-not-edit-end

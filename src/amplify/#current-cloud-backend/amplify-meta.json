@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cmp-dev-105338-authRole",
+      "UnauthRoleArn": "arn:aws:iam::204420864411:role/amplify-cmp-dev-105338-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::204420864411:role/amplify-cmp-dev-105338-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cmp-dev-105338-deployment",
+      "UnauthRoleName": "amplify-cmp-dev-105338-unauthRole",
+      "StackName": "amplify-cmp-dev-105338",
+      "StackId": "arn:aws:cloudformation:us-east-1:204420864411:stack/amplify-cmp-dev-105338/8ec457b0-5dc7-11ec-ad4b-0e6d2682b977",
+      "AmplifyAppId": "d1ncjy4rbdv4f6"
+    }
+  },
+  "auth": {
+    "cmp060e947f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cmp-dev-105338-deployment/amplify-cfn-templates/auth/cmp060e947f-cloudformation-template.json",
+        "logicalId": "authcmp060e947f"
+      },
+      "lastPushTimeStamp": "2021-12-15T17:09:03.445Z",
+      "output": {
+        "UserPoolId": "us-east-1_5F2S87v55",
+        "AppClientIDWeb": "73hqos18a2l3807t84tjmf091i",
+        "AppClientID": "7o5pju859l1qt1lu82lusnlaaj",
+        "HostedUIDomain": "cmp060e947f-060e947f-dev",
+        "IdentityPoolId": "us-east-1:71546b87-7f44-4b36-92a1-2c0ee5cddd75",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:204420864411:userpool/us-east-1_5F2S87v55",
+        "IdentityPoolName": "cmp060e947f_identitypool_060e947f__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"https://www.google.com/\"]}",
+        "UserPoolName": "cmp060e947f_userpool_060e947f"
+      },
+      "lastPushDirHash": "aIOKvXMAQk8quzjADoEtsJhJMqE="
+    }
+  }
+}
